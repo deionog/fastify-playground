@@ -1,11 +1,18 @@
 import type { FastifyInstance } from "fastify"
+import { getConvo } from "../controllers/convo.controller.js"
+
+export default async function routes(fastify: FastifyInstance, options: Object) {
+  fastify.get("/convo/:id", getConvo);
+}
+
+
 
 /**
  * Encapsulates the routes
  * @param {FastifyInstance} fastify  Encapsulated Fastify Instance
  * @param {Object} options plugin options, refer to https://fastify.dev/docs/latest/Reference/Plugins/#plugin-options
  */
-async function routes (fastify: FastifyInstance, options: Object) {
+/*async function routes (fastify: FastifyInstance, options: Object) {
   fastify.route({
     method: 'GET',
     url: '/conversation',
@@ -36,6 +43,6 @@ async function routes (fastify: FastifyInstance, options: Object) {
       return { hello: 'world' }
     }
   })
-}
+}*/
 
-export default routes
+//export default routes
