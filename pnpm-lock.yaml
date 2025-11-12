@@ -7,6 +7,13 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@sinclair/typebox':
+        specifier: ^0.34.41
+        version: 0.34.41
+      fastify:
+        specifier: ^5.6.1
+        version: 5.6.1
     devDependencies:
       '@types/node':
         specifier: ^24.8.0
@@ -40,6 +47,9 @@ packages:
 
   '@fastify/proxy-addr@5.1.0':
     resolution: {integrity: sha512-INS+6gh91cLUjB+PVHfu1UqcB76Sqtpyp7bnL+FYojhjygvOPA9ctiD/JDKsyD9Xgu4hUhCSJBPig/w7duNajw==}
+
+  '@sinclair/typebox@0.34.41':
+    resolution: {integrity: sha512-6gS8pZzSXdyRHTIqoqSVknxolr1kzfy4/CeDnrzsVz8TTIWUbOBr6gnzOmTYJ3eXQNh4IYHIGi5aIL7sOZ2G/g==}
 
   '@types/node@24.8.0':
     resolution: {integrity: sha512-5x08bUtU8hfboMTrJ7mEO4CpepS9yBwAqcL52y86SWNmbPX8LVbNs3EP4cNrIZgdjk2NAlP2ahNihozpoZIxSg==}
@@ -389,6 +399,8 @@ snapshots:
     dependencies:
       '@fastify/forwarded': 3.0.1
       ipaddr.js: 2.2.0
+
+  '@sinclair/typebox@0.34.41': {}
 
   '@types/node@24.8.0':
     dependencies:
